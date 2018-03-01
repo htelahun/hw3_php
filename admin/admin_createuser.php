@@ -13,7 +13,7 @@ if(isset($_POST['submit'])){
   $userlvl = $_POST['userlvl'];
 
 if(empty($userlvl)){
-  $message = "please select user level";
+  $message = "Please select user level";
 }else {
   $result = createUser($fname, $username, $password, $email, $userlvl);
   $message = $result;
@@ -28,11 +28,23 @@ if(empty($userlvl)){
   <head>
     <meta charset="utf-8">
     <title>CMS Portal</title>
+      <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
-    <h1>Welcome Company Name to your create user page</h1>
+
+    <section class="box3">
+
+    <div class="title2">
+        <?php
+        echo "<h1> Welcome {$_SESSION['user_name']} to your create user page!</h1>";
+        ?>
+    </div>
+<div class="mid">
 <?php if(!empty($message)){echo $message;} ?>
-    <form action="admin_createuser.php" method="post">
+
+</div>
+
+    <form class="mid" action="admin_createuser.php" method="post">
       <label>First name:</label>
       <input type="text" name="fname" value="" <?php if(!empty($fname)){echo $fname;} ?>><br><br>
 
@@ -42,7 +54,7 @@ if(empty($userlvl)){
       <label>Password :</label>
       <input type="text" name="password" value="" <?php if(!empty($password)){echo $password;} ?>><br><br>
 
-      <label>Email :</label>
+      <label class="last">Email :</label>
       <input type="text" name="email" value="" <?php if(!empty($email)){echo $email;} ?>><br><br>
 
       <label>User Level :</label>
@@ -52,10 +64,11 @@ if(empty($userlvl)){
         <option value="1">Web master</option>
       </select><br><br>
 
-      <input type="submit" name="submit" value="Create User">
+      <input class="click2" type="submit" name="submit" value="Create User">
 
     </form>
 
 
+    </section>
   </body>
 </html>

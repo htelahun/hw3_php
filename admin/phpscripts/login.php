@@ -25,7 +25,7 @@ function logIn($username, $password, $ip){
         $updatequery = mysqli_query($link, $updatestring);
       }
 
-      redirect_to('admin_index.php');
+      redirect_to('admin/admin_index.php');
     }else {
       $message = "username and or password is incorrect. <br>Please make sure your caps lock key is turned off. ";
       return $message;

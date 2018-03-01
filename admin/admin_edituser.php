@@ -35,14 +35,24 @@ if(isset($_POST['submit'])){
 <html>
   <head>
     <meta charset="utf-8">
+      <link rel="stylesheet" href="../css/main.css">
     <title>CMS Portal</title>
   </head>
   <body>
-    <h1>Welcome Company Name to your edit user page</h1>
+
+<section class="box3">
+
+  <div class="title2">
+      <?php
+      echo "<h1> Welcome {$_SESSION['user_name']} to your Edit User page !</h1>";
+      ?>
+  </div>
+
+
 <?php if(!empty($message)){echo $message;} ?>
-    <form action="admin_edituser.php" method="post">
+    <form class="mid" action="admin_edituser.php" method="post">
       <label>First name:</label>
-    
+
       <input type="text" name="fname" value=" <?php echo $found_user['user_fname']; ?>"><br><br>
 
       <label>Username :</label>
@@ -51,13 +61,13 @@ if(isset($_POST['submit'])){
       <label>Password :</label>
       <input type="text" name="password" value=" <?php echo $found_user['user_pass']; ?>"><br><br>
 
-      <label>Email :</label>
+      <label class="last">Email :</label>
       <input type="text" name="email" value="<?php echo $found_user['user_email']; ?>"><br><br>
 
-      <input type="submit" name="submit" value="Edit Account">
+      <input class="click2" type="submit" name="submit" value="Edit Account">
 
     </form>
 
-
+</section>
   </body>
 </html>

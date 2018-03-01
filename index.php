@@ -2,7 +2,7 @@
 //init_set('display_errors', 1);//mac
 //error_reporting(E_All); //mac
 
-require_once('phpscripts/config.php');
+require_once('admin/phpscripts/config.php');
 
 //what ip address youre signing in at
 //test it localhost/MMED_3014_18/admin/admin_login.php
@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
   $result = logIn($username, $password, $ip);
   $message = $result;
   }else{
-    $message ="please fill in the required fields";
+    $message ="Please fill in the required fields";
     //echo $message;
   }
 }
@@ -35,27 +35,34 @@ if (isset($_POST['submit'])) {
   <head>
     <meta charset="utf-8">
     <title>CMS Portal Login</title>
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <h1>Welcome Company Name</h1>
+    <div class="box">
+
+    <h1 class="center-t">Welcome</h1>
+    <p class="center">
     <?php
       if(!empty($message)){
         echo $message;
       }
-
      ?>
-      <form action="admin_login.php" method="post">
-        <label>Username</label>
+     </p>
+      <form action="index.php" method="post">
+        <label class="center">Username :</label>
         <input type="text" name="username" value="">
-          <br>
-        <label>Password </label>
+          <br><br>
+        <label class="center">Password :</label>
         <input type="text" name="password" value="">
-          <br>
-        <input type="submit" name="submit" value="Show me the money">
+          <br><br>
+        <input class="center-btn" type="submit" name="submit" value="Enter">
 
 
 
 
       </form>
+
+
+    </div>
   </body>
 </html>

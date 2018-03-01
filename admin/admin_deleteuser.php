@@ -14,21 +14,28 @@ $user = getAll($tbl);
 <html>
   <head>
     <meta charset="utf-8">
+      <link rel="stylesheet" href="../css/main.css">
     <title>CMS Portal</title>
   </head>
   <body>
-    <h1>Welcome Company Name</h1>
-    <?php
 
+<section class="box">
+
+    <h1 class="title2">Delete User</h1>
+
+    <div class="mid1">
+
+    <?php
     while($row = mysqli_fetch_array($user)){
       //
       echo "{$row['user_fname']} <a href=\"phpscripts/caller.php?caller_id=delete&id={$row['user_id']}\">Delete User</a><br>";
-      
+
 
       }
-
      ?>
+       </div>
 
 
+     </section>
   </body>
 </html>

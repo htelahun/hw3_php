@@ -1,0 +1,123 @@
+body {
+  background-color: #f5deb3;
+
+}
+ h1{
+   font-size: 30px;
+   padding: 2%;
+ }
+
+ p{
+   margin-left: 10%;
+ }
+
+.title{
+  margin-left: 220px;
+  margin-bottom: 10%;
+}
+
+.title1{
+  margin-left:20px;
+  margin-bottom: 50px;
+}
+.title2{
+  margin-left:100px;
+  margin-bottom: 50px;
+}
+form label {
+  margin-right: 100px;
+}
+
+form label input{
+  padding: 10px;
+}
+
+.last{
+  margin-right: 135px;
+}
+
+.box {
+  background-color: #ffff;
+  width: 400px;
+  height: 300px;
+  margin: 15% 35%;
+  padding-top: 20px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+
+}
+
+.box2 {
+  background-color: #ffff;
+  width: 700px;
+  height: 300px;
+  margin: 200px 350px;
+  padding-top: 20px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+
+}
+.box3 {
+  background-color: #ffff;
+  width: 700px;
+  height: 500px;
+  margin: 100px 350px;
+  padding-top: 20px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+
+}
+
+.center{
+  margin-left: 50px;
+  margin-right: 10%;
+}
+.center-t{
+  margin-left: 30%;
+}
+.center-btn{
+  padding: 10px;
+  margin-left: 40%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  border: solid 1px grey;
+  background-color: lightgrey;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+    color: black;
+}
+
+.link1{
+  margin-left: 50px;
+}
+
+.click{
+  margin-right: 50px;
+  border: solid 1px grey;
+  padding: 20px;
+  background-color: lightgrey;
+  text-decoration: none;
+  color: black;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.click2{
+  border: solid 1px grey;
+  padding: 10px;
+  background-color: lightgrey;
+  text-decoration: none;
+  color: black;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+  margin-left:120px;
+  margin-top: 40px;
+}
+
+.mid{
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+.mid1{
+  margin-left: 150px;
+  margin-bottom: 50px;
+}
+
+form label {
+  font-size: 24px;
+}
